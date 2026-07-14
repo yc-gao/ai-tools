@@ -7,7 +7,14 @@ authors = [
     { name = "ycgao", email = "yc_x@outlook.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "openai>=2.45.0",
+    "openai-whisper>=20250625",
+    "python-dotenv>=1.2.2",
+]
+
+[project.scripts]
+video2txt = "ptools.cli.video2txt:main"
 
 [build-system]
 requires = ["uv_build>=0.11.28,<0.12.0"]
