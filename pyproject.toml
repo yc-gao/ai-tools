@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-video2txt = "ptools.cli.video2txt:main"
+video2txt = "video2txt:main"
 
 [build-system]
 requires = ["uv_build>=0.11.28,<0.12.0"]
